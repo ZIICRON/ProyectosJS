@@ -1,0 +1,74 @@
+<script>
+    let PrecioProdUno;
+    let PrecioProdDos;
+    let PrecioProdTres;
+
+    let ProductoUno;
+    let ProductoDos;
+    let ProductoTres;
+
+    let SumaProductos;
+    let CalculoIva;
+    let ResultadoFinal;
+
+    let pagaIvaUno;
+    let pagaIvaDos;
+    let pagaIvaTres;
+
+    let ivaProductoUno;
+    let ivaProductoDos;
+    let ivaProductoTres;
+
+    let sumaIvaProductoUno;
+    let sumaIvaProductoDos;
+    let sumaIvaProductoTres;
+
+    ProductoUno = (prompt('¡Ingrese el nombre del primer producto!'));
+    PrecioProdUno = parseInt(prompt('¡Ingrese el precio del primer producto!'));
+    pagaIvaUno = (prompt('El producto paga IVA?'))
+    if (pagaIvaUno == 'si'){
+    ivaProductoUno = PrecioProdUno * 0.16
+    alert('El producto paga IVA');
+    }
+    else { alert('El producto NO paga IVA')
+    ivaProductoUno = 0}
+
+    ProductoDos = (prompt('¡Ingrese el nombre del segundo producto!'));
+    PrecioProdDos = parseInt(prompt('¡Ingrese el precio del segundo producto!'));
+    pagaIvaDos = (prompt('El producto paga IVA?'))
+    if (pagaIvaDos == 'si'){
+    ivaProductoDos = PrecioProdDos * 0.16
+    alert('El producto paga IVA');
+    }
+    else { alert('El producto NO paga IVA')
+    ivaProductoDos = 0}
+
+    ProductoTres = (prompt('¡Ingrese el nombre del tercer producto!'));
+    PrecioProdTres = parseInt(prompt('¡Ingrese el precio del tercer producto!'));
+    pagaIvaTres = (prompt('El producto paga IVA?'))
+    if (pagaIvaTres == 'si'){
+    ivaProductoTres = PrecioProdTres * 0.16
+    alert('El producto paga IVA');
+    }
+    else { alert('El producto NO paga IVA')
+    ivaProductoTres = 0}
+
+    document.write('<b>FACTURA</b>'+'<br>');
+    document.write('<br>');
+
+    document.write('El primer producto es: '+ ProductoUno+ ' y tiene un valor de BsE: '+ PrecioProdUno+ ', el producto paga IVA? '+ pagaIvaUno+ '<br>');
+    document.write('El segundo producto es: '+ ProductoDos+ ' y tiene un valor de BsE: '+ PrecioProdDos+ ', el producto paga IVA? '+ pagaIvaDos+ '<br>');
+    document.write('El tercer producto es: '+ ProductoTres+ ' y tiene un valor de BsE:  '+ PrecioProdTres+ ', el producto paga IVA? '+ pagaIvaTres+ '<br>');
+    
+
+    SumaProductos = PrecioProdUno + PrecioProdDos + PrecioProdTres;
+    document.write('El subtotal de la compra es de BsE:  '+ SumaProductos+ '<br>');
+
+    CalculoIva = ivaProductoUno + ivaProductoDos + ivaProductoTres;
+    document.write('El valor del IVA es de BsE:  '+ CalculoIva+ '<br>');
+
+    ResultadoFinal = SumaProductos + CalculoIva;
+    document.write('El total de la compra es de BsE:  '+ ResultadoFinal+ '<br>');
+
+
+</script>

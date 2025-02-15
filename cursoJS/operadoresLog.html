@@ -1,0 +1,36 @@
+<script>
+
+  let numeroUno;
+  let numeroDos;
+
+
+  numeroUno = parseInt(prompt("Escoge tu opcion Jugador 1: Piedra, Papel y Tijera "));
+  numeroDos = parseInt(prompt("Escoge tu opcion Jugador 2: Piedra, Papel y Tijera "));
+
+if (numeroUno == "Piedra" && numeroDos == "Tijera") {
+
+ document.write("Gana el Jugador 2", numeroUno , numeroDos);
+
+} else if (numeroUno == "Piedra" && numeroDos == "Piedra"){
+
+document.write("Empate ambos escogieron Piedra", numeroUno, numeroDos);
+
+}
+
+if(numeroUno == "Tijera" && numeroDos == "Papel"){
+
+  document.write("gana Jugador 1", numeroUno, numeroDos);
+
+}else if(numeroUno == "Papel" && numeroDos == "Papel"){
+
+document.write("Empate ambos escogieron Papel", numeroUno, numeroDos);
+
+}
+
+if(numeroUno =="Papel" && numeroDos == "Piedra"){
+
+document.write("gana Jugador 2", numeroUno,numeroDos);
+
+} 
+
+</script>

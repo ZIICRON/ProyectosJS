@@ -1,0 +1,52 @@
+<script>
+
+// suiche
+
+let opcionElegir;
+let numeroUno;
+let numeroDos;
+let sumaDos;
+
+
+opcionElegir = prompt("Ingrese una opcion");
+
+switch (opcionElegir) {
+
+case '1':
+document.write("Escogiste suma");
+numeroUno = parseInt(prompt("Ingrese el primer numero"));
+numeroDos = parseInt(prompt("Ingrese el segundo numero"));
+sumaDos = numeroUno+numeroDos;
+document.write("La suma es "+ sumaDos);
+    break;
+  case '2':
+    document.write("Escogiste resta");
+numeroUno = parseInt(prompt("Ingrese el primer numero"));
+numeroDos = parseInt(prompt("Ingrese el segundo numero"));
+sumaDos = numeroUno-numeroDos;
+document.write("La resta es "+ sumaDos);
+    break;
+
+    case '3':
+document.write("Escogiste MULTIPLICACION");
+numeroUno = parseInt(prompt("Ingrese el primer numero"));
+numeroDos = parseInt(prompt("Ingrese el segundo numero"));
+sumaDos = numeroUno*numeroDos;
+document.write("EL RESULTADO DE LA MULTIPLICACION  es "+ sumaDos);
+    break;
+
+    case '4': 
+document.write("Escogiste Division ");
+numeroUno = parseInt(prompt("Ingrese el primer numero"));
+numeroDos = parseInt(prompt("Ingrese el segundo numero"));
+sumaDos = numeroUno/numeroDos;
+document.write("EL RESULTADO DE LA Division  es "+ sumaDos);
+    break;
+
+  default:
+    document.write ("Escoge una opcion valida");
+    
+}
+
+
+</script>

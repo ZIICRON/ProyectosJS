@@ -1,0 +1,43 @@
+<script>
+
+let numUno ;
+let numDos ;
+let resultadoSuma;
+let resultadoResta;
+let resultadoDivision;
+let resultadoMultiplication;
+
+
+
+numUno = parseInt(prompt("Ingrese el numero 1"));
+numDos = parseInt(prompt("Ingrese el numero 2"));
+
+
+resultadoSuma = numUno + numDos;
+
+resultadoSumaPorcentaje = resultadoSuma * 0.30; 
+
+resultadoTotal= resultadoSuma + resultadoSumaPorcentaje;
+
+resultadoResta = numUno - numDos;
+
+resultadoDivision = numUno / numDos; 
+
+resultadoMultiplication = numUno * numDos;
+
+//escritura en la page//
+document.write ("El Resultado de la suma es:"+ resultadoSuma +"<br>" );
+//suma del resultado mas el porcentaje//
+document.write ("El Resultado de la suma y el porcentaje es:"+ resultadoSumaPorcentaje +"<br>" );
+document.write ("El Resultado total es:"+ resultadoTotal +"<br>" );
+
+
+
+document.write ("El Resultado de la Resta es:"  + resultadoResta +"<br>");
+document.write ("El Resultado de la Division es:" + resultadoDivision +"<br>");
+document.write ("El Resultado de la Multiplicacion es: " + resultadoMultiplication +"<br>");
+
+
+
+
+</script>

@@ -1,0 +1,64 @@
+<script>
+
+let numeroEst;
+
+//Datos Personales
+
+let nombreEst;
+let cedulaEst;
+
+//Notas
+
+let nota_1;
+let nota_2;
+let nota_3;
+
+//promedio
+
+let suma_Notas;
+//let promedio;
+
+
+
+for(i = 0; i <= 2; i++){
+
+    nombreEst= prompt("Ingrese el nombre y apellido del estudiante: ")
+    document.write("El nombre y apellido del estudiante es: "+ nombreEst, "  num " +i+ " ","<br>");
+
+    cedulaEst= parseInt(prompt("Ingresa la Cedula del Estudiante: "))
+    document.write("La Cedula del estudiante es: "+ cedulaEst+ "<br>");
+
+    nota_1=parseInt(prompt("ingresa nota 1", "<br>"));
+    document.write("La primera nota del estudiante es: "+ nota_1 +"<br>");
+
+    nota_2=parseInt(prompt("ingresa nota 2", "<br>"));
+    document.write("La segunda nota del estudiante es: "+ nota_2+ "<br>");
+
+    nota_3=parseInt(prompt("ingresa nota 3", "<br>"));
+    document.write("la tercera nota del estudiante es: "+ nota_3+ "<br>");
+
+
+    suma_Notas= (nota_1+nota_2+nota_3)/3;
+    document.write("El promedio es: " +suma_Notas+ "<br>");
+
+    // promedio= suma_Notas/3;
+    // document.write("El promedio del Estudiante es: " +promedio+ "<br>");
+
+    if(nota_1 <= 20){
+        alert ("la Nota es valida");
+    }else if(nota_1 >20){
+        alert ("la Nota no es valida");
+    } if(nota_2 <= 20){
+        alert ("la Nota 2 es valida");
+    }else if(nota_2 > 20){
+        alert ("La nota 2 No es valida");
+    } if(nota_3 <= 20){
+        alert ("La nota 3 es valida");
+    }else if(nota_3 > 20){
+        alert ("la Nota 3 no es valida");
+    }
+
+
+}
+
+</script>

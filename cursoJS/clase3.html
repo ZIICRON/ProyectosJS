@@ -1,0 +1,106 @@
+<script>
+
+//nombre de los productos//
+  let nombreProd_1;
+  let nombreProd_2;
+  let nombreProd_3;
+
+//precio de los productos//
+
+let precioProd_1;
+let precioProd_2;
+let precioProd_3;
+
+//operadores matematicos//
+
+let resultadoSuma;
+let porcSuma;
+let totalaPagar;
+
+//exentos de IVA//
+
+let pagaIva_1;
+let pagaIva_2;
+let pagaIva_3;
+
+//suma del iva
+
+let sumaIvaProd_1;
+let sumaIvaProd_2;
+let sumaIvaProd_3;
+
+
+
+//inicio//
+
+nombreProd_1 = window.prompt("Nombre del Producto 1", "Introduza el nombre del Producto");
+precioProd_1 = parseInt(prompt("Ingrese el Precio del primer producto"));
+pagaIva_1 = prompt(" el producto paga Iva ");
+if (pagaIva_1 == "si"){
+
+  sumaIvaProd_1= precioProd_1* 0.16;
+  alert ("El producto paga IVA");
+
+}
+
+else if (pagaIva_1 == "si o no"){
+  sumaIvaProd_1 = 0;
+  alert ("El producto no paga IVA");
+
+}
+
+
+nombreProd_2 = window.prompt("Nombre del Producto 2", "Introduza el nombre del Producto");
+precioProd_2 = parseInt(prompt("Ingrese el Precio del segundo producto"));
+pagaIva_2 = prompt("Si o No");
+if (pagaIva_2 == "si"){
+
+   sumaIvaProd_2= precioProd_2 * 0.16;
+  alert ("El producto paga Iva");
+
+}else if (pagaIva_2 == "si o no"){
+
+sumaIvaProd_2 = 0;
+alert ("El producto no paga Iva");
+}
+
+
+nombreProd_3 = window.prompt("Nombre del Producto 3", "Introduza el nombre del Producto");
+precioProd_3 = parseInt(prompt("Ingrese el Precio del tercer producto"));
+pagaIva_3 = prompt("Si o No");
+
+if (pagaIva_3 == "si"){
+
+sumaIvaProd_3= precioProd_3 * 0.16;
+alert ("El producto paga Iva");
+
+}else if (pagaIva_3 == "si o no"){
+
+sumaIvaProd_3 = 0
+alert ("El producto no paga Iva");
+
+}
+
+
+
+resultadoSuma = precioProd_1 + precioProd_2 + precioProd_3;
+
+porcSuma = sumaIvaProd_1 + sumaIvaProd_2 + sumaIvaProd_3; 
+
+totalaPagar= resultadoSuma + porcSuma;
+
+
+
+ 
+document.write("Producto 1:  "+ nombreProd_1+ "    Precio producto 1:   " +precioProd_1+"Bs  "+  pagaIva_1+ ""    +"<br>");
+document.write("Producto 2:  "+ nombreProd_2+ "    Precio producto 2:   " +precioProd_2+"Bs  "+ pagaIva_2+  ""    +"<br>");
+document.write("Producto 3:  "+ nombreProd_3+ "    Precio producto 3:   " +precioProd_3+"Bs  "+  pagaIva_3+ ""    +"<br>");
+document.write ("El Resultado de la suma es:"+ resultadoSuma +"<br>" );
+
+//suma del resultado mas el porcentaje//
+document.write ("El Resultado de la suma y el porcentaje es:"+ porcSuma +"<br>" );
+document.write ("El Resultado total es:"+ totalaPagar +"<br>" );
+
+
+
+</script>

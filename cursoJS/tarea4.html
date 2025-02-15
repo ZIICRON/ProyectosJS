@@ -1,0 +1,112 @@
+<script>
+
+    // suiche
+    
+    let opcionElegir;
+
+    //case 1 Datos del ESTUDIANTE
+    let nombres_1;
+    let apellidos_1;
+    let cedula_1;
+    let edad_1;
+    let añocursar_1;
+
+    let datosEst_1;
+    let datosEst_2;
+
+    //case 2 Datos Academicos
+
+    let notaMath;
+    let notaLanguage;
+    let notascienceNat; 
+    
+    let sumaPromedio;
+    let promedio;
+
+    //case 4 Salario Mensual
+  
+    let salario_Mensual;
+    let cesta_Ticket;
+    let sumaSueldo;
+   
+  //case 5 Salir
+
+  let salir_Ventana;
+    
+    opcionElegir = prompt("Ingrese una opcion");
+    
+    switch (opcionElegir) {
+    
+    case '1':
+    document.write("Datos Personales del Estudiante:  <br>");
+    nombres_1= prompt("Ingrese los nombres");
+    console.log(nombres_1);
+    apellidos_1 = prompt("Ingrese los apellidos");
+    console.log(apellidos_1);
+    cedula_1 = parseInt(prompt("Ingrese la Cedula"));
+    console.log(cedula_1);
+    edad_1 = parseInt(prompt("Ingrese la Edad"));
+    console.log(edad_1);
+    añocursar_1 = parseInt(prompt("Ingrese el Año que cursa"));
+    console.log(añocursar_1)
+
+    datosEst_1 = nombres_1;
+    datosEst_2= apellidos_1;
+
+    
+    document.write( " Nombres:  <br>" + datosEst_1 + " Apellidos:   <br>" + datosEst_2 +  " Cedula:  <br>"+ cedula_1 + " Edad:  <br>" + edad_1 + " Año a Cursar:  <br>" + añocursar_1 );
+        break;
+
+      case '2':
+        document.write("Datos Academicos <br>");
+    cedula_1 = parseInt(prompt("Ingrese cedula del estudiante"));
+    console.log(cedula_1);
+    notaMath = parseInt(prompt("Ingrese nota de matematica"));
+    console.log(notaMath);
+    notaLanguage = parseInt(prompt("Ingrese nota de castellano"));
+    console.log(notaLanguage);
+    notascienceNat = parseInt(prompt("Ingrese nota de Ciencias Naturales"));
+    console.log(notascienceNat);
+
+    sumaPromedio = notaMath+notaLanguage+notascienceNat;
+    promedio= sumaPromedio/3;
+
+    document.write(" Cedula del Estudiante:  <br>" + cedula_1 + " Nota de matematica:  <br>"+ notaMath + " Nota de Castellano:  <br>"+ notaLanguage + " Nota de Ciencias Naturales: <br>"+ notascienceNat + " Promedio: <br>"+ promedio );
+        break;
+    
+        case '3':
+    document.write("Listado de Profesores <br>");
+    document.write("Andres Sanchez, 16.270.626 <br>");
+    document.write("Yohanna Flores, 15.174.537 <br>");
+    document.write("Rita Peña, 11.581.626 <br>");
+    document.write("Doris Huggines, 3.993.378  <br>");
+    document.write("Ricardo Huggines, 15.174.538  <br>");
+
+    document.write("EL RESULTADO DE LA MULTIPLICACION  es "+ sumaDos);
+        break;
+    
+
+        case '4': 
+    document.write("Salario Mensual del Personal Obrero: <br>");
+    salario_Mensual = parseInt(prompt("Ingrese el primer numero"));
+    sumaSueldo = salario_Mensual * 0.45;
+    
+    document.write("El Sueldo total es  <br>"+ sumaSueldo);
+        break;
+
+    
+        case '5': 
+    
+       default:
+       
+       console.log('default');
+    
+        break;
+    
+    
+        document.write ('Escoge una opcion valida');
+        
+    }
+    
+    
+    </script>
