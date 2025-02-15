@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de GRID</title>
+    <style>
+        .contenedor{
+            padding: 50PX;
+            width: 600px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: 200px 1fr 1fr ;
+            grid-template-areas: 
+            "item1 item2 item3"
+            "item1 item4 item5"
+            "item1 item6 item6"
+            ;
+            grid-gap: 5px;
+        }
+        .divs{
+            border: 2px solid #000;
+            display: flex;
+            color: white;
+            font-size: 28px;
+            justify-content: center;
+            align-items: center;
+        }
+        .d1{
+            grid-area: item1;
+            background-color: darkgoldenrod;
+        }
+        .d2{
+            grid-area: item2;
+            background-color: rgb(184, 11, 132);
+        }
+        .d3{
+            grid-area: item3;
+            background-color: rgb(11, 28, 184);
+        }
+        .d4{
+            grid-area: item4;
+            background-color: rgb(152, 228, 66);
+        }
+        .d5{
+            grid-area: item5;
+            background-color: rgb(11, 184, 170);
+        }
+        .d6{
+            grid-area: item6;
+            background-color: rgb(184, 11, 11);
+        } 
+        @media (max-width: 600px) {
+            .contenedor{
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: 200px 1fr 1fr ;
+            grid-template-areas: 
+            "item1 item1 item1"
+            "item2 item3 item4"
+            "item5 item6 item6"
+            ;
+        }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="divs d1">1</div>
+        <div class="divs d2">2</div>
+        <div class="divs d3">3</div>
+        <div class="divs d4">4</div>
+        <div class="divs d5">5</div>
+        <div class="divs d6">6</div>
+    </div>
+</body>
+</html>

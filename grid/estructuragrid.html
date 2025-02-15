@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <!-- <link rel="stylesheet" href="css/estructuragrid.css""> -->
+  <style>
+    .grid-container{
+        display: grid;
+        grid-template-columns: 200px 450px 200px;
+        grid-template-rows: 100px 600px 80px;
+        grid-template-areas: 
+        "header header header"
+        "navbar main sidebar"
+        "footer footer footer"
+        ;
+    }
+    .header{
+        grid-area: header;
+        background-color: crimson;
+    }
+    .navbar{
+      grid-area: navbar;
+      background-color: aqua;
+    }
+    .sidebar{
+      grid-area: sidebar;
+      background-color: cornflowerblue;
+    }
+    .main{
+      grid-area: main;
+      background-color: darkcyan;
+    }
+    .footer{
+      grid-area: footer;
+      background-color: darksalmon;
+    }
+
+    @media screen and (min-width:600px) {
+      .grid-container{
+        display: grid;
+        grid-template-columns: 200px 600px;
+        grid-template-rows: 100px 50px 600px 80px;
+        grid-template-areas: 
+        "header header"
+        "navbar navbar"
+        "sidebar main"
+        "footer footer "
+        ;
+    }     
+      
+    }
+
+
+  </style>
+
+
+</head>
+<body>
+
+  <div class="grid-container">
+    <header class="header">HEADER</header>
+    <nav class="navbar">NAVBAR</nav>
+    <aside class="sidebar">SIDEBAR</aside>
+    <article class="main">MAIN</article>
+    <footer class="footer">FOOTER</footer>
+  </div>
+
+
+</body>
+</html>
